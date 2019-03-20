@@ -22,9 +22,18 @@ class CardNumberM extends React.Component {
     return Payment.fns.cardType(number);
   }
 
+  validCard(number) {
+    return Payment.fns.validateCardNumber(number);
+  }
+
   onChange(e) {
     const value = e.target.value;
     const cardType = this.cardType(value);
+    if (this.validCard(value)) {
+      this.inputRef.classList.add("check");
+    } else {
+      this.inputRef.classList.remove("check");
+    }
 
     this.setState({ cardType });
   }

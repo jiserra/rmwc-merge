@@ -6,16 +6,36 @@ import "../swipesimpleInput.css";
 class ExpirationDateM extends React.Component {
   constructor(props) {
     super(props);
+
+    this.onChange = this.onChange.bind(this);
   }
 
   componentDidMount() {
     Payment.formatCardExpiry(this.inputRef);
   }
 
+  validExp(number) {
+    return Payment.fns.validateCardExpiry(number);
+  }
+
+  onChange(e) {
+    const value = e.target.value;
+    const isValid = this.validExp(value);
+
+    if (isValid) {
+      this.props.isValid && this.props.isValid();
+      this.inputRef.classList.add("check");
+    } else {
+      this.props.isInvalid && this.props.isInvalid();
+      this.inputRef.classList.remove("check");
+    }
+  }
+
   render() {
     return (
       <input
         placeholder="00 / 00"
+        onChange={this.onChange}
         ref={input => (this.inputRef = input)}
         {...this.props}
       />
@@ -24,12 +44,13 @@ class ExpirationDateM extends React.Component {
 }
 
 function ExpirationDate(props) {
-  return <ExpirationDateM {...props} onChange={props.onChange} />;
+  return <ExpirationDateM {...props} />;
 }
 
 ExpirationDate.propTypes = {
-  onChange: PropTypes.func,
-  disabled: PropTypes.bool
+  disabled: PropTypes.bool,
+  isValid: PropTypes.func,
+  isInvalid: PropTypes.func
 };
 
 export { ExpirationDate as default };
