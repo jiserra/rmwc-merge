@@ -7,7 +7,8 @@ module.exports = {
           "src/SwipeSimple/FormInput/FormInput.js",
           "src/SwipeSimple/ExpirationDate/ExpirationDate.js",
           "src/SwipeSimple/CardNumber/CardNumber.js",
-          "src/SwipeSimple/InputCVV/InputCVV.js"
+          "src/SwipeSimple/InputCVV/InputCVV.js",
+          "src/SwipeSimple/NameInput/NameInput.js"
         ]
       },
       {
