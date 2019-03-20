@@ -4,7 +4,7 @@ module.exports = {
       {
         name: "SwipeSimple",
         include: [
-          "src/SwipeSimple/formInput/formInput.js",
+          "src/SwipeSimple/FormInput/FormInput.js",
           "src/SwipeSimple/ExpirationDate/ExpirationDate.js",
           "src/SwipeSimple/CardNumber/CardNumber.js",
           "src/SwipeSimple/InputCVV/InputCVV.js"
