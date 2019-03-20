@@ -1,7 +1,7 @@
 import React from "react";
 import Payment from "payment";
 import PropTypes from "prop-types";
-import "../swipesimpleinput.css";
+import "../swipesimpleInput.css";
 
 class CardNumberM extends React.Component {
   constructor(props) {

@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "../swipesimpleinput.css";
+import "../swipesimpleInput.css";
 
 class FormInputM extends React.Component {
   constructor(props) {
