@@ -5,14 +5,14 @@ Integration of [RMWC library](https://jamesmfriedman.github.io/rmwc/) with UXPin
 
 ## About RMWC
 
-RMWC is a collection of React Wrappers for official Google's material-components library. Created and maintained by James Friedman 🙌. 
+RMWC is a collection of React Wrappers for official Google's material-components library. Created and maintained by James Friedman 🙌.
 To support RMWC please consider donation: https://opencollective.com/rmwc
 
 ## About UXPin Merge
 
-Merge is a revolutionary technology that lets users import (and keep in sync) coded React.js components from GIT repositories to UXPin editor. 
-The imported components are 100% identical to components used by developers during the development process. 
-It means that components are going to look and, function (interactions, data) identical to the real product experienced by the users. 
+Merge is a revolutionary technology that lets users import (and keep in sync) coded React.js components from GIT repositories to UXPin editor.
+The imported components are 100% identical to components used by developers during the development process.
+It means that components are going to look and, function (interactions, data) identical to the real product experienced by the users.
 
 [UXPin](http://uxpin.com) is a leading code–based design platform.
 
@@ -63,7 +63,7 @@ If you wish to push RMWC components to your UXPin account or set-up a continues 
 
 ## Theming
 
-To change the theme - modify `theme.css` file located in the `./src/Wrapper/` directory. ThemeProvider was unfortunately causing bugs with some of the components. The functionality is identitcal in both approaches.
+To change the theme - modify `theme.css` file located in the `./src/Wrapper/` directory. ThemeProvider was unfortunately causing bugs with some of the components. The functionality is identical in both approaches.
 
 ## Video
 
